@@ -114,6 +114,11 @@ module "null_resource" {
 
 No providers required.
 
+## Version History
+
+- **v1.1.0**: Added version constraints file and command validation
+- **v1.0.0**: Initial release with basic null resource functionality
+
 ## Notes
 
 - The `local_exec_when` variable accepts either "create" or "destroy" values
