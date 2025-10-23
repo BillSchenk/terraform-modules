@@ -73,3 +73,8 @@ module "s3_bucket" {
 | Name | Version |
 |------|---------|
 | aws | >= 5.0 |
+
+## Version History
+
+- **v1.1.0**: Added bucket name validation and version constraints file
+- **v1.0.0**: Initial release with basic S3 bucket functionality

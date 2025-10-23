@@ -14,6 +14,10 @@ variable "local_exec_command" {
   description = "Command to execute locally"
   type        = string
   default     = "echo 'No command specified'"
+  validation {
+    condition     = var.local_exec_command != null && var.local_exec_command != ""
+    error_message = "local_exec_command cannot be null or empty."
+  }
 }
 
 variable "working_dir" {
