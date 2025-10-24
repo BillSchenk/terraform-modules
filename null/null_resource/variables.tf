@@ -99,5 +99,5 @@ variable "connection_timeout" {
 variable "module_version" {
   description = "Version of the module to echo"
   type        = string
-  default     = "1.0.1"
+  default     = "1.1.0"
 }
