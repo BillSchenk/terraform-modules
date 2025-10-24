@@ -41,13 +41,19 @@ variable "tags" {
   default     = {}
 }
 
+variable "module_version" {
+  description = "Version of the module"
+  type        = string
+  default     = "1.0.2"
+}
+
 variable "lifecycle_rules" {
   description = "List of lifecycle rules for the S3 bucket"
   type = list(object({
-    id                                    = string
-    status                                = string
-    expiration_days                       = optional(number)
-    noncurrent_version_expiration_days    = optional(number)
+    id                                 = string
+    status                             = string
+    expiration_days                    = optional(number)
+    noncurrent_version_expiration_days = optional(number)
   }))
   default = null
 }
