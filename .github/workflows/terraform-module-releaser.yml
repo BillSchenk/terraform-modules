@@ -27,7 +27,7 @@ jobs:
             To use this module in your Terragrunt deploy, refer to the below example:
             ```hcl
             terraform {
-              source = "git@github.com:hirevue-org/hv-terraform-modules.git?ref={{latest_tag}}"
+              source = "git@github.com:BillSchenk/terraform-modules.git?ref={{latest_tag}}"
             }
             ```
 
@@ -35,7 +35,7 @@ jobs:
 
             ```hcl
             module "{{module_name_terraform}}" {
-              source = "git@github.com:hirevue-org/hv-terraform-modules.git?ref={{latest_tag}}"
+              source = "git@github.com:BillSchenk/terraform-modules.git?ref={{latest_tag}}"
 
               # See inputs below for additional required parameters
             }
