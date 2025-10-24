@@ -95,3 +95,9 @@ variable "connection_timeout" {
   type        = string
   default     = "5m"
 }
+
+variable "module_version" {
+  description = "Version of the module to echo"
+  type        = string
+  default     = "1.0.1"
+}

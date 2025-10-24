@@ -5,5 +5,12 @@ output "id" {
 
 output "triggers" {
   description = "The triggers used for the null resource"
-  value       = var.triggers
+  value = {
+    module_version = var.module_version
+  }
+}
+
+output "module_version" {
+  description = "The module version that was echoed"
+  value       = var.module_version
 }
