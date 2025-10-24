@@ -44,7 +44,7 @@ variable "tags" {
 variable "module_version" {
   description = "Version of the module"
   type        = string
-  default     = "1.0.2"
+  default     = "1.0.3"
 }
 
 variable "lifecycle_rules" {
